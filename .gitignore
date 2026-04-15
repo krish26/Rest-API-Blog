@@ -1,2 +1,4 @@
 rest-api./
 .env
+__pycache__/
+*.pyc
