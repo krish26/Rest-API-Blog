@@ -37,6 +37,10 @@ def _find_post_by_id(post_id):
 
 #--Routs --#
 
+@app.route("/")
+def index():
+    return jsonify({"message": "Welcome to flask with cosmos-db API"}), 200
+
 @app.route("/posts", methods=["GET"])
 def get_posts():
     query = "SELECT * FROM c "
